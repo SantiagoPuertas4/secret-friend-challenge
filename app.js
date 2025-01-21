@@ -58,3 +58,9 @@ function raffleFriends() {
   let friendNumber = generateRandomNumber(friendsArray.length);
   friendWinner.innerHTML = `<li>El amigo ganador es${friendsArray[friendNumber]}</li>`;
 }
+
+function resetFriendsList() {
+  resetInputs();
+  friendsArray = [];
+  friendWinner.innerHTML = '';
+}
