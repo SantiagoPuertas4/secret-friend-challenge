@@ -1,6 +1,6 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let friendsArray = [];
 let friendsInput = document.getElementById('amigo');
+let friendsList = document.getElementById('listaAmigos');
 
 function trimInterno(texto) {
   return texto.replace(/^\s+|\s+$|(\s)\s+/g, '$1');
@@ -23,4 +23,11 @@ function addFriends() {
 
   friendsArray.push(trimInterno(friendsInput.value));
   friendsInput.value = '';
+  friendsList.innerHTML = '';
+
+  let listaHTML = '';
+  for (let i = 0; i < friendsArray.length; i++) {
+    listaHTML += `<li>${friendsArray[i]}</li>`;
+  }
+  friendsList.innerHTML = listaHTML;
 }
