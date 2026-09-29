@@ -2,6 +2,10 @@
 
 Este proyecto es una herramienta sencilla para organizar un sorteo de amigo secreto. Permite a los usuarios agregar nombres, ver la lista de participantes y seleccionar un ganador aleatorio de manera dinámica.
 
+**Demo en vivo:** https://santiagopuertas4.github.io/secret-friend-challenge/
+
+Desarrollado como solución al desafío "Amigo Secreto" del programa Oracle Next Education (ONE) de Alura Latam, a partir del template base provisto por el curso.
+
 ---
 
 ## Tabla de Contenidos
@@ -19,7 +23,7 @@ Este proyecto es una herramienta sencilla para organizar un sorteo de amigo secr
 1. **Clonar el repositorio**:
 
    ```bash
-   git clone https://github.com/tu-usuario/amigo-secreto.git
+   git clone https://github.com/SantiagoPuertas4/secret-friend-challenge.git
    ```
 
 2. **Abrir el proyecto**:
@@ -65,7 +69,7 @@ Este proyecto es una herramienta sencilla para organizar un sorteo de amigo secr
 ## Créditos
 
 - **Desarrollador**: Santiago Puertas
-- **Contacto**: santidoors13@gmail.com
+- **GitHub**: [SantiagoPuertas4](https://github.com/SantiagoPuertas4)
 
 ---
 
