@@ -20,12 +20,17 @@ function resetInputs() {
   friendsList.innerHTML = '';
 }
 
+function createListItem(texto) {
+  let item = document.createElement('li');
+  item.textContent = texto;
+  return item;
+}
+
 function showFriendsName() {
-  let listaHTML = '';
+  friendsList.innerHTML = '';
   for (let i = 0; i < friendsArray.length; i++) {
-    listaHTML += `<li>${friendsArray[i]}</li>`;
+    friendsList.appendChild(createListItem(friendsArray[i]));
   }
-  friendsList.innerHTML = listaHTML;
 }
 
 function addFriends() {
@@ -56,7 +61,8 @@ function raffleFriends() {
   }
 
   let friendNumber = generateRandomNumber(friendsArray.length);
-  friendWinner.innerHTML = `<li>El amigo ganador es${friendsArray[friendNumber]}</li>`;
+  friendWinner.innerHTML = '';
+  friendWinner.appendChild(createListItem(`El amigo ganador es ${friendsArray[friendNumber]}`));
 }
 
 function resetFriendsList() {
